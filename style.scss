@@ -158,29 +158,26 @@ header {
   //   position: absolute;
   width: 100%;
   text-align: center;
-  .slider{
+  .slider {
     width: 100%;
     max-width: 100%;
     height: 500px;
     background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  
+    background-position: center center;
+    background-repeat: no-repeat;
   }
-.slider1{
-  background-image: url("https://picsum.photos/1200/499");
-  
-  
-}
-.slider2{
-  background-image: url("https://picsum.photos/1201/500");
-}
-.slider3{
-  background-image: url("https://picsum.photos/1200/500");
-}
-.slider4{
-  background-image: url("https://picsum.photos/1199/501");
-}
+  .slider1 {
+    background-image: url("https://picsum.photos/1200/499");
+  }
+  .slider2 {
+    background-image: url("https://picsum.photos/1201/500");
+  }
+  .slider3 {
+    background-image: url("https://picsum.photos/1200/500");
+  }
+  .slider4 {
+    background-image: url("https://picsum.photos/1199/501");
+  }
   .cta-btn {
     padding: 10px 20px;
     background: #ff574d;
@@ -334,7 +331,9 @@ footer {
   }
   .social {
     margin: 20px 5px;
-
+    a {
+      color: #fff;
+    }
     .fab {
       font-size: 40px;
       margin: 0 10px;

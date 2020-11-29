@@ -405,6 +405,10 @@ footer .social {
   margin: 20px 5px;
 }
 
+footer .social a {
+  color: #fff;
+}
+
 footer .social .fab {
   font-size: 40px;
   margin: 0 10px;
