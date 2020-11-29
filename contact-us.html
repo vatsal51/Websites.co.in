@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="particle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="box">
+        <a class="logo" href="#"><i class="fas fa-camera-retro"></i></a>
+        <nav>
+          <div class="hamburger"></div>
+          <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="blogs.html">blogs</a></li>
+            <li><a href="contact-us.html">contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="sec">
+      <!--The div element for the map -->
+      <div id="map"></div>
+    </section>
+
+    <div class="form-box">
+      <form>
+        <div class="g-group">
+          <input type="text" name="name" required placeholder="&nbsp;" />
+          <label class="g-label">Name</label>
+        </div>
+        <div class="g-group">
+          <input type="text" name="name" required placeholder="&nbsp;" />
+          <label class="g-label">Email</label>
+        </div>
+        <div class="g-group">
+          <input type="text" name="name" required placeholder="&nbsp;" />
+          <label class="g-label">Message</label>
+        </div>
+        <div class="w100p">
+          <button type="submit" value="Submit">submit</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <div id="particles-js"></div>
+
+      <div class="details">
+        <p>Vatsal Patel</p>
+        <address>
+          PremNagar-5, B-212, Mandepeshwar Road, Borivali (W), Mumbai 400 092
+        </address>
+        <a href="tel:+918097414315"> Contact me </a>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-google-plus-square"></i></a>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 19.22928757863187, lng: 72.85651971292421 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="app.js" defer="defer"></script>
+
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8cC3cDPJWAG4QYq6ANeRSY99ezL_NszQ&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>

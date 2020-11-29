@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="particle.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="box">
+        <a class="logo" href="#"><i class="fas fa-camera-retro"></i></a>
+        <nav>
+          <div class="hamburger"></div>
+          <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="blogs.html">blogs</a></li>
+            <li><a href="contact-us.html">contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="slider-sec rel sec">
+      <div class="s-slider">
+        <div class="slider1 slider">
+          <a class="cta-btn" href="#">CTA Button</a>
+        </div>
+        <div class="slider2 slider">
+          <a class="cta-btn" href="#">CTA Button </a>
+        </div>
+        <div class="slider3 slider">
+          <a class="cta-btn" href="#">CTA Button</a>
+        </div>
+        <div class="slider4 slider">
+          <a class="cta-btn" href="#">CTA Button</a>
+        </div>
+      </div>
+      <div class="prev-s-slider"><i class="fas fa-arrow-right"></i></div>
+      <div class="next-s-slider"><i class="fas fa-arrow-left"></i></div>
+    </section>
+
+    <div class="container">
+      <div class="blog">
+        <div class="blog-title">
+          <i class="fas fa-camera-retro"></i> Featured <span>Blogs</span>
+          <span class="overlay">Blogs</span>
+        </div>
+        <div class="row">
+          <div class="card">
+            <div class="wrapper">
+              <div class="card-img b-img">
+                <img src="https://picsum.photos/300/200" alt="" />
+              </div>
+              <div class="inner-content">
+                <h5>Camera & Accesories</h5>
+                <h2>Blog title 2</h2>
+
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Inventore totam reiciendis dolor, in, neque aut, soluta
+                  nesciunt dignissimos atque vero esse minima illo omnis culpa
+                  error! Cupiditate unde numquam corporis.
+                </p>
+
+                <a href="blogs.html">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="wrapper">
+              <div class="card-img b-img">
+                <img src="https://picsum.photos/300/200" alt="" />
+              </div>
+              <div class="inner-content">
+                <h5>Camera & Accesories</h5>
+                <h2>Blog title 2</h2>
+
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Inventore totam reiciendis dolor, in, neque aut, soluta
+                  nesciunt dignissimos atque vero esse minima illo omnis culpa
+                  error! Cupiditate unde numquam corporis.
+                </p>
+
+                <a href="blogs.html">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="particles-js"></div>
+
+      <div class="details">
+        <p>Vatsal Patel</p>
+        <address>
+          PremNagar-5, B-212, Mandepeshwar Road, Borivali (W), Mumbai 400 092
+        </address>
+        <a href="tel:+918097414315"> Contact me </a>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-google-plus-square"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="app.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".s-slider").slick({
+          dots: true,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          prevArrow: $(".prev-s-slider"),
+          nextArrow: $(".next-s-slider"),
+        });
+      });
+    </script>
+    <!-- <script>
+      $(document).ready(function () {
+        var ham = ".hamburger";
+        $(ham).click(function () {
+          $("header ul").toggleClass("open");
+        });
+
+        $(document).ready(function () {
+          $(".s-slider").slick({
+            dots: true,
+            infinite: true,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 20000,
+            prevArrow: $(".prev-s-slider"),
+            nextArrow: $(".next-s-slider"),
+          });
+        });
+      });
+    </script> -->
+  </body>
+</html>
