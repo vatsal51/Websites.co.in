@@ -1,5 +1,5 @@
 # Websites.co.in
-Theme chosen: Photography (blac)
+Theme chosen: Photography
 
 No installation required. 
 
